@@ -17,6 +17,7 @@ const formDataSchema = new mongoose.Schema<IFormData>(
     { timestamps: true }
 );
 
-export const FormDataModel =
-    mongoose.models.formdata ||
-    mongoose.model<IFormData>("formdata", formDataSchema);
+const FormDataModel =
+    mongoose.models.formdata || mongoose.model("formdata", formDataSchema);
+
+export default FormDataModel;

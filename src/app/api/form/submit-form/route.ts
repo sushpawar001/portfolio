@@ -1,5 +1,5 @@
 import { connectDB } from "@/dbConfig/connectDB";
-import { FormDataModel } from "@/models/formData";
+import FormDataModel from "@/models/formData";
 import { NextResponse, NextRequest } from "next/server";
 
 connectDB();
